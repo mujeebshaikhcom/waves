@@ -20,11 +20,13 @@
     flex-wrap: nowrap;
     align-items: center;
     padding: 1rem 2rem;
+    transition: background-color 0.5s ease;
+    transition-delay: 0.1s;
     img{
         width: 30%;
     }
     &:hover {
-        background-color: rosybrown;
+        background-color: rgb(222,222,225);
     }
 }
 .song-desc {
@@ -57,9 +59,15 @@
 }
 
 .selected {
-    background-color: purple;
+    background-color: #c1c1fe;
 }
 .library-show {
     transform: translateX(0);
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .library {
+        width: 100%;
+    }
 }
